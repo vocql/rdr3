@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Red Dead Redemption 3 | Pre-Production</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style>
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* Body */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #f3e6c8;
+    background: url('https://i.imgur.com/kNnFZlE.jpg') center/cover no-repeat fixed;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+/* Dark overlay */
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
+/* Western Navbar */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: url('https://i.imgur.com/fBf2YdF.jpg') repeat-x; /* wood texture */
+    border-bottom: 3px solid #a0522d;
+    z-index: 2;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    color: #f3e6c8;
+    letter-spacing: 2px;
+}
+
+nav a {
+    color: #f3e6c8;
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #d9b77c;
+    text-shadow: 2px 2px 5px black;
+}
+
+/* Main hero section */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+}
+
+.hero h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 10px black;
+}
+
+.hero p {
+    font-size: 24px;
+    max-width: 600px;
+    line-height: 1.5;
+    text-shadow: 1px 1px 6px black;
+}
+
+.hero button {
+    margin-top: 40px;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    background: #b35c3c;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    background: #d97c5b;
+}
+
+/* Footer */
+footer {
+    padding: 20px 50px;
+    text-align: center;
+    background: rgba(0,0,0,0.8);
+    font-size: 14px;
+    position: relative;
+    z-index: 2;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>RDR3</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">News</a>
+        <a href="#">Media</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Red Dead Redemption 3</h2>
+    <p>Currently in pre-production. The Wild West will rise again soon. Stay tuned for updates and official news!</p>
+    <button>Subscribe for Updates</button>
+</section>
+
+<footer>
+    &copy; 2026 Red Dead Redemption 3 Fan Site. All rights reserved.
+</footer>
+
+</body>
+</html>
