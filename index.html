@@ -27,39 +27,38 @@ body::before {
     z-index: 1;
 }
 
-/* Western Navbar */
+/* Western-style clean navbar centered */
 header {
     position: fixed;
     top: 0;
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
-    background: url('https://i.imgur.com/fBf2YdF.jpg') repeat-x; /* wood texture */
-    border-bottom: 3px solid #a0522d;
+    justify-content: center; /* center the nav */
+    padding: 20px 0;
+    background-color: rgba(60, 40, 20, 0.9); /* warm brown */
+    border-bottom: 2px solid #d9b77c; /* subtle gold border */
     z-index: 2;
 }
 
-header h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 28px;
-    color: #f3e6c8;
-    letter-spacing: 2px;
+nav {
+    display: flex;
+    gap: 40px;
 }
 
 nav a {
     color: #f3e6c8;
     text-decoration: none;
-    margin-left: 30px;
-    font-weight: bold;
+    font-weight: 700;
     font-family: 'Playfair Display', serif;
+    letter-spacing: 1px;
+    padding: 5px 10px;
     transition: 0.3s;
+    border-radius: 4px;
 }
 
 nav a:hover {
-    color: #d9b77c;
-    text-shadow: 2px 2px 5px black;
+    background-color: #d9b77c;
+    color: #3c2814;
 }
 
 /* Main hero section */
@@ -119,7 +118,6 @@ footer {
 <body>
 
 <header>
-    <h1>RDR3</h1>
     <nav>
         <a href="#">Home</a>
         <a href="#">News</a>
