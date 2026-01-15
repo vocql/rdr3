@@ -27,7 +27,7 @@ body::before {
     z-index: 1;
 }
 
-/* Western-style clean navbar centered */
+/* Western-style navbar with backgrounds behind links */
 header {
     position: fixed;
     top: 0;
@@ -35,14 +35,14 @@ header {
     display: flex;
     justify-content: center; /* center the nav */
     padding: 20px 0;
-    background-color: rgba(60, 40, 20, 0.9); /* warm brown */
-    border-bottom: 2px solid #d9b77c; /* subtle gold border */
+    background-color: rgba(40, 30, 20, 0.95); /* dark brown */
+    border-bottom: 2px solid #cfc6ad; /* subtle beige border */
     z-index: 2;
 }
 
 nav {
     display: flex;
-    gap: 40px;
+    gap: 25px;
 }
 
 nav a {
@@ -51,14 +51,15 @@ nav a {
     font-weight: 700;
     font-family: 'Playfair Display', serif;
     letter-spacing: 1px;
-    padding: 5px 10px;
+    padding: 8px 20px;
+    background-color: rgba(60, 45, 30, 0.85); /* dark block behind text */
+    border-radius: 6px;
     transition: 0.3s;
-    border-radius: 4px;
 }
 
 nav a:hover {
-    background-color: #d9b77c;
-    color: #3c2814;
+    background-color: #cfc6ad; /* light beige on hover */
+    color: #281f13; /* dark text on hover */
 }
 
 /* Main hero section */
@@ -93,15 +94,15 @@ nav a:hover {
     font-size: 18px;
     font-weight: bold;
     border: none;
-    background: #b35c3c;
-    color: #fff;
+    background: #6b3e2c; /* deep brown */
+    color: #f3e6c8; /* beige text */
     cursor: pointer;
     border-radius: 5px;
     transition: 0.3s;
 }
 
 .hero button:hover {
-    background: #d97c5b;
+    background: #8b5e4b; /* lighter brown hover */
 }
 
 /* Footer */
