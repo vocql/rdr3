@@ -27,39 +27,33 @@ body::before {
     z-index: 1;
 }
 
-/* Western-style navbar with backgrounds behind links */
 header {
     position: fixed;
     top: 0;
     width: 100%;
     display: flex;
-    justify-content: center; /* center the nav */
+    justify-content: center;
     padding: 20px 0;
-    background-color: rgba(40, 30, 20, 0.95); /* dark brown */
-    border-bottom: 2px solid #cfc6ad; /* subtle beige border */
+    background-color: transparent; /* REMOVE navbar background */
+    border-bottom: none; /* REMOVE border if any */
     z-index: 2;
 }
 
-nav {
-    display: flex;
-    gap: 25px;
-}
-
 nav a {
-    color: #f3e6c8;
+    color: #f3e6c8; 
     text-decoration: none;
     font-weight: 700;
     font-family: 'Playfair Display', serif;
     letter-spacing: 1px;
     padding: 8px 20px;
-    background-color: rgba(60, 45, 30, 0.85); /* dark block behind text */
+    background-color: rgba(60, 45, 30, 0.85); /* keep the block behind text */
     border-radius: 6px;
     transition: 0.3s;
 }
 
 nav a:hover {
-    background-color: #cfc6ad; /* light beige on hover */
-    color: #281f13; /* dark text on hover */
+    background-color: #cfc6ad;
+    color: #281f13;
 }
 
 /* Main hero section */
